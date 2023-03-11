@@ -5,14 +5,22 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "lint": "echo '----- Checking Frontend...' && prettier --debug-check . && eslint --ext .jsx . && echo '----- Done!'",
     "fix": "prettier --write . && eslint --fix --ext .jsx ."
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "axios": "^0.27.2",
+    "gh-pages": "^4.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",

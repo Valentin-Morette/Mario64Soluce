@@ -1,13 +1,17 @@
-import Home from "@pages/Home";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/LevelSelect";
+import Welcome from "./pages/WorldSelect";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-      <p>coucou</p>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/level/:world" element={<Home />} />
+        <Route path="/" element={<Welcome />} />
+      </Routes>
+    </Router>
   );
 }
 
